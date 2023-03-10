@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Librarian</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <div class="card">
+        <div class="card-body">
+            <h2>Add a Student</h2>
+            <div class="row">
+                <div class="col-9">
+                    <input type="text" class="form-control" id="student-name" placeholder="Student's Name">
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control" id="student-number" placeholder="Student ID Number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" class="form-control" id="book-title" placeholder="Book Title">
+                </div>
+                <div class="col-3">Date Checked Out
+                    <input type="date" class="form-control" id="date-checked-out">
+                </div>
+                <div class="col-3">Date Book Due
+                    <input type="date" class="form-control" id="date-book-due">
+                </div>
+            </div>
+            <button id="create-new-student" class="btn btn-primary form-control">Add</button>
+        </div>
+    </div>
+    
+    <div id="app">
+        <div class="card">
+            <div class="card-header">
+                <h4>Students</h4>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col-sm">Student ID No.</th>
+                            <th scope="col-sm">Student Name</th>
+                            <th scope="col-sm">Book Title</th>
+                            <th scope="col-sm">Date Checked Out</th>
+                            <th scope="col-sm">Date Book Due</th>
+                        </tr>
+                    </thead>
+                    <tbody id="app-table">
+                        
+                    </tbody>
+                </table>
+
+    </div>
+
+
+
+
+
+
+
+   
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
